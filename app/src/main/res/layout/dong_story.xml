@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="24dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/troke"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_story"
+                android:layout_width="84dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_height="84dp"/>
+            <TextView
+                android:id="@+id/tv_title_story"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cô bé lọ lem"
+                android:textSize="24sp"
+                android:textColor="#ff00"
+                android:layout_toRightOf="@id/iv_story"
+                android:layout_marginLeft="12dp"/>
+            <TextView
+                android:id="@+id/tv_content_story"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="content truyện"
+                android:layout_below="@id/tv_title_story"
+                android:layout_alignLeft="@id/tv_title_story"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

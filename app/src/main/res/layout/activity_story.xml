@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_story"
+    android:layout_height="match_parent"
+    tools:context=".StoryActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_story_1"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/tv_title_story_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_story_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:gravity="center_horizontal"
+                android:text="Tên truyện"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_content_story_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:padding="10dp"
+                android:layout_below="@id/tv_title_story_1"
+                android:text="Nội dung truyện"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
